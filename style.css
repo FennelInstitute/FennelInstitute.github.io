@@ -343,8 +343,9 @@ margin:10px 0;
 
 .business-photo img{
     width:100%;
-    height:320px;
+    height:360px;
     object-fit:cover;
+    object-position:center;
     border-radius:12px;
     box-shadow:0 8px 20px rgba(0,0,0,.15);
-}}
+}
