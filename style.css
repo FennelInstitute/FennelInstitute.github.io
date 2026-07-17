@@ -117,3 +117,155 @@ ul{
 li{
     margin-bottom:10px;
 }
+
+/* =====================================
+   business.html
+   ===================================== */
+
+/* ===== 事業内容トップ画像 ===== */
+
+.business-hero{
+    background:none;
+    box-shadow:none;
+    padding:0;
+    margin-bottom:50px;
+}
+
+.business-hero img{
+    width:100%;
+    display:block;
+    border-radius:14px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+/* ===== 写真＋説明 ===== */
+
+.business-item{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:50px;
+
+    margin-bottom:50px;
+
+}
+
+.business-photo{
+
+    flex:1;
+
+}
+
+.business-photo img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+.business-text{
+
+    flex:1;
+
+}
+
+.business-text h2{
+
+    color:#0b5fa5;
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+    border:none;
+
+    padding:0;
+
+}
+
+.business-text p{
+
+    font-size:17px;
+
+    color:#444;
+
+    margin-bottom:18px;
+
+}
+
+.business-text ul{
+
+    margin-left:20px;
+
+}
+
+.business-text li{
+
+    margin-bottom:8px;
+
+}
+
+/* ===== 下の事業カード ===== */
+
+.business-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:25px;
+
+    margin-top:20px;
+
+}
+
+.business-card{
+
+    background:#ffffff;
+
+    border-left:6px solid #0b5fa5;
+
+    border-radius:10px;
+
+    padding:25px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+}
+
+.business-card h3{
+
+    color:#0b5fa5;
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+.business-card p{
+
+    color:#555;
+
+}
+
+/* ===== 画像を少し拡大するとき ===== */
+
+.business-photo img:hover{
+
+    transform:scale(1.02);
+
+    transition:.3s;
+
+}
