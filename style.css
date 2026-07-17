@@ -1,4 +1,9 @@
-/* ===== 全体 ===== */
+/* =====================================
+   Fennel Institute株式会社
+   style.css
+   ===================================== */
+
+/* ===== リセット ===== */
 
 *{
     margin:0;
@@ -6,8 +11,10 @@
     box-sizing:border-box;
 }
 
+/* ===== 全体 ===== */
+
 body{
-    font-family: "Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
     background:#f4f7fb;
     color:#333;
     line-height:1.8;
@@ -17,65 +24,71 @@ body{
 
 header{
     background:#0b5fa5;
-    color:white;
-    padding:20px 0;
+    color:#fff;
+    text-align:center;
+    padding:25px 20px;
+}
+
+.logo{
+    width:240px;
+    max-width:90%;
+    display:block;
+    margin:0 auto 20px;
 }
 
 header h1{
-    text-align:center;
     font-size:34px;
+    margin-bottom:10px;
 }
 
 header p{
-    text-align:center;
-    margin-top:8px;
+    font-size:18px;
 }
 
-/* ===== メニュー ===== */
+/* ===== ナビ ===== */
 
 nav{
-    margin-top:15px;
-    text-align:center;
+    margin-top:20px;
 }
 
-
 nav a{
-    color:white;
+    display:inline-block;
+    color:#fff;
     text-decoration:none;
-    margin:0 18px;
     font-weight:bold;
-    font-size:16px;
+    margin:0 15px;
+    transition:.3s;
 }
 
 nav a:hover{
-    color:#08467a;
+    color:#d8ecff;
 }
 
 /* ===== メイン ===== */
 
 main{
-    max-width:1100px;
-    margin:auto;
-    padding:40px 20px;
+    max-width:1200px;
+    margin:40px auto;
+    padding:0 20px;
 }
 
-/* ===== カード ===== */
+/* ===== 共通セクション ===== */
 
 section{
-    background:white;
-    margin-bottom:35px;
-    padding:35px;
+    background:#fff;
     border-radius:12px;
-    box-shadow:0 3px 12px rgba(0,0,0,0.08);
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    padding:35px;
+    margin-bottom:40px;
 }
 
-/* ===== タイトル ===== */
+/* ===== 見出し ===== */
 
 h2{
     color:#0b5fa5;
-    margin-bottom:20px;
     border-left:6px solid #0b5fa5;
     padding-left:12px;
+    margin-bottom:20px;
 }
 
 /* ===== Hero ===== */
@@ -83,12 +96,12 @@ h2{
 .hero{
     text-align:center;
     background:linear-gradient(135deg,#0b5fa5,#4f8fd6);
-    color:white;
+    color:#fff;
 }
 
 .hero h1{
-    font-size:40px;
-    margin-bottom:20px;
+    font-size:42px;
+    margin-bottom:15px;
 }
 
 .hero p{
@@ -98,278 +111,9 @@ h2{
 /* ===== リスト ===== */
 
 ul{
-    margin-left:20px;
+    margin-left:22px;
 }
 
 li{
     margin-bottom:10px;
 }
-
-/* ===== 会社概要 ===== */
-
-.company-table{
-    width:100%;
-    border-collapse:collapse;
-}
-
-.company-table th{
-
-    width:28%;
-    background:#0b5fa5;
-    color:white;
-    padding:15px;
-    text-align:left;
-}
-
-.company-table td{
-
-    padding:15px;
-    border:1px solid #ddd;
-}
-
-.company-table tr:nth-child(even){
-
-    background:#f7f9fc;
-}
-
-/* ===== ボタン ===== */
-
-.button{
-
-    display:inline-block;
-    background:#0b5fa5;
-    color:white;
-    text-decoration:none;
-    padding:12px 25px;
-    border-radius:8px;
-    margin-top:20px;
-}
-
-.button:hover{
-
-    background:#08467a;
-}
-
-/* ===== フッター ===== */
-
-footer{
-
-    background:#0b5fa5;
-    color:white;
-    text-align:center;
-    padding:30px;
-    margin-top:50px;
-}
-
-/* ===== スマホ ===== */
-
-@media (max-width:768px){
-
-header h1{
-
-font-size:28px;
-
-}
-
-.hero h1{
-
-font-size:30px;
-
-}
-
-.hero p{
-
-font-size:18px;
-
-}
-
-.company-table th,
-.company-table td{
-
-display:block;
-width:100%;
-
-}
-
-.company-table th{
-
-margin-top:10px;
-
-}
-
-nav a{
-
-display:block;
-margin:10px 0;
-
-}
-
-}
-.logo{
-    display:block;
-    width:260px;
-    max-width:90%;
-    height:auto;
-    margin:0 auto 25px;
-}
-}
-
-<section class="hero">
-
-<h1>事業内容</h1>
-
-<p>
-医療とAIを融合し、医療現場に新しい価値を提供します。
-</p>
-
-</section>
-
-<div class="card-container">
-
-<div class="card">
-<h3>🩺 医療AI・診療支援</h3>
-<p>
-人工知能（AI）や大規模言語モデル（LLM）を活用し、
-診療支援、医療安全、業務効率化などのシステムを研究・開発します。
-</p>
-</div>
-
-<div class="card">
-<h3>💻 医療ソフトウェア</h3>
-<p>
-医療機器、医療用ソフトウェア、
-電子カルテ、病院情報システムなどの
-企画・研究・開発・導入支援を行います。
-</p>
-</div>
-
-<div class="card">
-<h3>📊 医療DX・データ活用</h3>
-<p>
-医療データの収集・管理・解析・匿名加工、
-データガバナンスや医療DX推進を支援します。
-</p>
-</div>
-
-<div class="card">
-<h3>🎓 研究・教育</h3>
-<p>
-講演会、研修会、セミナーの開催、
-教育コンテンツの企画・制作、
-医療・AI分野の研究活動を推進します。
-</p>
-</div>
-
-<div class="card">
-<h3>🏡 地域連携・施設活用</h3>
-<p>
-研究施設や教育施設、
-古民家などの地域資源を活用し、
-交流・研究・教育の拠点づくりを目指します。
-</p>
-</div>
-
-<div class="card">
-<h3>🌱 食育・健康増進</h3>
-<p>
-食育、栄養、健康増進、
-地域産品の活用など、
-健康で豊かな社会づくりに貢献します。
-</p>
-</div>
-
-</div>
-
-/* ===== 事業内容カード ===== */
-
-.business-container{
-    display:flex;
-    flex-wrap:wrap;
-    gap:25px;
-    justify-content:center;
-    margin-top:40px;
-}
-
-
-.business-card{
-
-    width:280px;
-
-    background:white;
-
-    border-radius:10px;
-
-    padding:25px;
-
-    box-shadow:0 3px 10px rgba(0,0,0,0.15);
-
-    text-align:center;
-
-}
-
-
-.business-card h3{
-
-    color:#0b5fa5;
-
-    margin-bottom:15px;
-
-}
-
-
-.business-card p{
-
-    line-height:1.8;
-
-}
-
-
-/* スマホ対応 */
-
-@media(max-width:600px){
-
-.business-card{
-
-    width:90%;
-
-}
-
-}
-/* ===== 事業内容トップ画像 ===== */
-
-.business-hero{
-    margin:0 0 50px;
-}
-.business-item{
-    display:flex;
-    align-items:center;
-    gap:40px;
-    margin:60px 0;
-}
-
-.business-photo{
-    flex:1;
-}
-
-.business-text{
-    flex:1;
-}
-.business-photo img{
-    width:100%;
-    max-width:520px;
-    height:320px;
-    display:block;
-    margin:auto;
-    object-fit:cover;
-    object-position:center;
-    border-radius:12px;
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
-}
-@media (max-width:900px){
-}
-
-.business-item{
-    flex-direction:column;
-}
-
-
