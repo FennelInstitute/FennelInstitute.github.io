@@ -269,3 +269,195 @@ li{
     transition:.3s;
 
 }
+/* =====================================
+   company.html
+   ===================================== */
+
+.company-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.company-table th{
+    width:28%;
+    background:#0b5fa5;
+    color:#fff;
+    padding:15px;
+    text-align:left;
+}
+
+.company-table td{
+    padding:15px;
+    border:1px solid #ddd;
+}
+
+.company-table tr:nth-child(even){
+    background:#f8fbff;
+}
+
+/* =====================================
+   Contact
+   ===================================== */
+
+.contact-box{
+
+    text-align:center;
+
+}
+
+.contact-box p{
+
+    font-size:18px;
+
+    margin-bottom:15px;
+
+}
+
+/* =====================================
+   Button
+   ===================================== */
+
+.button{
+
+    display:inline-block;
+
+    background:#0b5fa5;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.button:hover{
+
+    background:#08467a;
+
+}
+
+/* =====================================
+   Footer
+   ===================================== */
+
+footer{
+
+    background:#0b5fa5;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:35px 20px;
+
+    margin-top:60px;
+
+}
+
+footer p{
+
+    margin:5px 0;
+
+}
+
+/* =====================================
+   スマホ対応
+   ===================================== */
+
+@media (max-width:900px){
+
+header h1{
+
+    font-size:28px;
+
+}
+
+.hero h1{
+
+    font-size:32px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+nav a{
+
+    display:block;
+
+    margin:10px 0;
+
+}
+
+.business-item{
+
+    flex-direction:column;
+
+}
+
+.business-photo{
+
+    width:100%;
+
+}
+
+.business-photo img{
+
+    width:100%;
+
+    height:auto;
+
+}
+
+.business-text{
+
+    width:100%;
+
+}
+
+.business-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.company-table,
+.company-table tbody,
+.company-table tr,
+.company-table th,
+.company-table td{
+
+    display:block;
+
+    width:100%;
+
+}
+
+.company-table th{
+
+    margin-top:10px;
+
+}
+
+main{
+
+    padding:20px;
+
+}
+
+section{
+
+    padding:25px;
+
+}
+
+}
